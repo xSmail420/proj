@@ -3,8 +3,8 @@
 @import '~@fontsource/roboto-condensed';
 
 body {
-    background-color: #17242C;
-    color: #fff;
+    background-color: #0E8388;
+    color: #000;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -13,11 +13,11 @@ body {
 }
 
 .song-list a {
-    color: #fff;
+    color: #000;
 }
 
 .song-details {
-    background-color: #222F36;
+    background-color: #2E4F4F;
     border-radius: 5px;
     padding: 5px;
 }
