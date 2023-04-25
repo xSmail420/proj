@@ -1,4 +1,4 @@
-# Tutorials, Friendship & Symfony6
+# Symfony6 Class Project
 
 Well hi there! This repository holds the code and script
 for the little project we've done during symfony class.
