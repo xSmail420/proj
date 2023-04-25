@@ -1,33 +1,32 @@
-@import '~bootstrap';
-@import '~@fortawesome/fontawesome-free/css/all.css';
-@import '~@fontsource/roboto-condensed';
+@import "~bootstrap";
+@import "~@fortawesome/fontawesome-free/css/all.css";
+@import "~@fontsource/roboto-condensed";
 
 body {
-    background-color: #0E8388;
-    color: #000;
-    font-family: 'Roboto Condensed', sans-serif;
+  background-color: #d9e9e9;
+  color: #000;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .song-list i {
-    margin-top: 7px;
+  margin-top: 7px;
 }
 
 .song-list a {
-    color: #000;
+  color: #000;
 }
 
 .song-details {
-    background-color: #2E4F4F;
-    border-radius: 5px;
-    padding: 5px;
+  background-color: rgba(32, 44, 113, 0.605);
+  border-radius: 5px;
+  padding: 5px;
 }
 
 .genre-list li {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 .mixed-vinyl-container {
-    background: rgb(23,36,44);
-    background: linear-gradient(180deg, rgba(23,36,44,1) 1%, rgba(34,47,54,1) 97%);
-    border-radius: 5px;
+  background: #d9e9e9;
+  border-radius: 5px;
 }
