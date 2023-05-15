@@ -3,7 +3,6 @@
 namespace App\Controller;
 
 use App\Repository\VinylMixRepository;
-use App\Service\MixRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -12,10 +11,9 @@ use function Symfony\Component\String\u;
 class VinylController extends AbstractController
 {
     public function __construct(
-        private bool $isDebug,
-        private MixRepository $mixRepository
-    ) {
-    }
+        private bool $isDebug
+    )
+    {}
 
     #[Route('/', name: 'app_homepage')]
     public function homepage(): Response
