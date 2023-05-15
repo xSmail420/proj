@@ -14,8 +14,8 @@ class VinylController extends AbstractController
     public function __construct(
         private bool $isDebug,
         private MixRepository $mixRepository
-    )
-    {}
+    ) {
+    }
 
     #[Route('/', name: 'app_homepage')]
     public function homepage(): Response
@@ -40,7 +40,7 @@ class VinylController extends AbstractController
     {
         $genre = $slug ? u(str_replace('-', ' ', $slug))->title(true) : null;
 
-        $mixes = $mixRepository->findAll();
+        $mixes = $mixRepository->findBy([], ['votes' => 'DESC']);
 
         return $this->render('vinyl/browse.html.twig', [
             'genre' => $genre,

@@ -11,7 +11,7 @@ class VinylMix
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
-    #[ORM\Column]
+    #[ORM\Column()]
     private ?int $id = null;
 
     #[ORM\Column(length: 255)]
@@ -36,7 +36,7 @@ class VinylMix
     {
         $this->createdAt = new \DateTimeImmutable();
     }
-    
+
     public function getId(): ?int
     {
         return $this->id;
@@ -112,5 +112,12 @@ class VinylMix
         $this->votes = $votes;
 
         return $this;
+    }
+
+    public function getVotesString(): string
+    {
+        $prefix = ($this->votes === 0) ? '' : (($this->votes >= 0) ? '+' : '-');
+
+        return sprintf('%s %d', $prefix, abs($this->votes));
     }
 }
