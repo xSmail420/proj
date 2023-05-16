@@ -4,7 +4,7 @@
 
 body {
     background-color: #478579;
-    color: #fff;
+    color: #000000;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -13,7 +13,7 @@ body {
 }
 
 .song-list a {
-    color: #fff;
+    color: #000000;
 }
 
 .song-details {
@@ -27,7 +27,7 @@ body {
 }
 
 .mixed-vinyl-container {
-    background: rgb(23,36,44);
+    background: rgb(23, 44, 37);
     background: linear-gradient(180deg, rgba(23,36,44,1) 1%, rgba(34,47,54,1) 97%);
     border-radius: 5px;
 
