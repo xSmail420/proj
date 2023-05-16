@@ -3,7 +3,7 @@
 @import '~@fontsource/roboto-condensed';
 
 body {
-    background-color: #17242C;
+    background-color: #478579;
     color: #fff;
     font-family: 'Roboto Condensed', sans-serif;
 }
@@ -17,7 +17,7 @@ body {
 }
 
 .song-details {
-    background-color: #222F36;
+    background-color: #478579;
     border-radius: 5px;
     padding: 5px;
 }
